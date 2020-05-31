@@ -1,0 +1,12 @@
+
+# HTID:12724233: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+php_value output_buffering 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:12724233:
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW SSL_REDIRECT:droiddocket.in
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^droiddocket.in$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE SSL_REDIRECT:droiddocket.in
